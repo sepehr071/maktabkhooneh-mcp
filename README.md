@@ -17,8 +17,8 @@ no account. Works with Claude, Cursor and Copilot.
 - **Install:** `claude mcp add maktabkhooneh -- uvx maktabkhooneh-mcp` (stdio, needs [uv](https://docs.astral.sh/uv/getting-started/installation/) and Python 3.10+).
 - **Auth:** none. Optional `MAKTABKHOONEH_MCP_PROXY` sets an HTTP proxy (or a comma-separated list) for every request.
 - **Access:** read-only. It cannot log in, enrol, buy or review.
-- **Tools:** 12, all prefixed `mk_`. Start with `mk_search`, `mk_browse`, `mk_cheapest`, `mk_course`, `mk_free_courses`.
-- **Typical sequence:** `mk_search` (or `mk_categories` -> `mk_browse`) -> `mk_course` -> `mk_curriculum` or `mk_reviews`.
+- **Tools:** 12, all prefixed `mkh_`. Start with `mkh_search`, `mkh_browse`, `mkh_cheapest`, `mkh_course`, `mkh_free_courses`.
+- **Typical sequence:** `mkh_search` (or `mkh_categories` -> `mkh_browse`) -> `mkh_course` -> `mkh_curriculum` or `mkh_reviews`.
 - **Use when:** the user wants to find an Iranian online course, compare price, level, hours and rating, find free or discounted courses, or look up a teacher or a university's courses.
 - **Do not use when:** the user wants to enrol, pay, watch lessons or needs their own account data.
 - **Output:** compact JSON. Prices in Toman (`final_price` is what you pay, 0 = free), rating 0-5, numeric course ids to pass between tools, paging with `next_page`.
@@ -64,38 +64,38 @@ All 12 tools are annotated `readOnlyHint: true` and return compact structured JS
 
 | Tool | What it does |
 |---|---|
-| `mk_search` | Text search (Persian or English) with price, discount, hours, rating, students, teachers; sort relevance / popular / new; first 300 matches |
-| `mk_browse` | A category or all ~5,700 courses with the site's filters: paid / free, level, hours, minimum rating, publisher, feature (certificate, exam and project, Persian subtitle or dubbing); sort popular / new / rate |
-| `mk_free_courses` | Free courses (~740), optionally per category, level and rating |
-| `mk_cheapest` | Cheapest paid courses for a topic or category, with a price ceiling (scans the first 300 results) |
-| `mk_deals` | Biggest current discounts, with a minimum percent and price ceiling |
-| `mk_categories` | The category tree (~680 nodes): top-level groups, one subtree, or title search; gives the slugs for the tools above |
+| `mkh_search` | Text search (Persian or English) with price, discount, hours, rating, students, teachers; sort relevance / popular / new; first 300 matches |
+| `mkh_browse` | A category or all ~5,700 courses with the site's filters: paid / free, level, hours, minimum rating, publisher, feature (certificate, exam and project, Persian subtitle or dubbing); sort popular / new / rate |
+| `mkh_free_courses` | Free courses (~740), optionally per category, level and rating |
+| `mkh_cheapest` | Cheapest paid courses for a topic or category, with a price ceiling (scans the first 300 results) |
+| `mkh_deals` | Biggest current discounts, with a minimum percent and price ceiling |
+| `mkh_categories` | The category tree (~680 nodes): top-level groups, one subtree, or title search; gives the slugs for the tools above |
 
 **One course**
 
 | Tool | What it does |
 |---|---|
-| `mk_course` | Full / content-only / upgrade prices, discount end, level, hours, teachers, publisher, category, prerequisites, features, description, FAQ |
-| `mk_curriculum` | Chapters and lessons with type and duration |
-| `mk_reviews` | Learner reviews (stars, text, date, instructor reply) and the star histogram; reviewer names are left out |
+| `mkh_course` | Full / content-only / upgrade prices, discount end, level, hours, teachers, publisher, category, prerequisites, features, description, FAQ |
+| `mkh_curriculum` | Chapters and lessons with type and duration |
+| `mkh_reviews` | Learner reviews (stars, text, date, instructor reply) and the star histogram; reviewer names are left out |
 
 **People**
 
 | Tool | What it does |
 |---|---|
-| `mk_teacher` | A teacher's profile (bio, students, rating, links) and courses |
-| `mk_organizations` | Publishers (~180 universities and companies) with their ids; name search |
-| `mk_organization` | A publisher's totals and its most popular courses |
+| `mkh_teacher` | A teacher's profile (bio, students, rating, links) and courses |
+| `mkh_organizations` | Publishers (~180 universities and companies) with their ids; name search |
+| `mkh_organization` | A publisher's totals and its most popular courses |
 
 ## Good to know
 
 - **Prices are in Toman** (the site shows the same numbers with «تومان»; its JSON-LD labels them IRR, which is wrong). `final_price` is what you pay, `price` the list price (shown only when discounted), `discount_pct` a whole percent, `free` true for 0.
-- **The site cannot sort or filter by price.** `mk_cheapest` and `mk_deals` scan the first 300 results (3 requests of 100) and sort here; `scanned` of `total` tells how complete the answer is. Use `mk_browse` filters to narrow the pool first.
-- **`mk_search` reaches only the first 300 matches** and the site ignores filters there; filter with `mk_browse` instead (it has no text query).
-- **`full`, `content_only`, `upgrade` in `mk_course`:** the whole course (lessons, projects, certificate), lessons only, and the price to upgrade from lessons-only to full.
+- **The site cannot sort or filter by price.** `mkh_cheapest` and `mkh_deals` scan the first 300 results (3 requests of 100) and sort here; `scanned` of `total` tells how complete the answer is. Use `mkh_browse` filters to narrow the pool first.
+- **`mkh_search` reaches only the first 300 matches** and the site ignores filters there; filter with `mkh_browse` instead (it has no text query).
+- **`full`, `content_only`, `upgrade` in `mkh_course`:** the whole course (lessons, projects, certificate), lessons only, and the price to upgrade from lessons-only to full.
 - **`hours`** is a number, or `"H:MM"` for courses under two hours.
 - **`kind`:** `PLUS` paid, `MAKTAB` free, `HAMAYESH` events.
-- Discounts are time limited (a site-wide sale ran 14-22 Oct 2026); `mk_course` gives `discount_ends`.
+- Discounts are time limited (a site-wide sale ran 14-22 Oct 2026); `mkh_course` gives `discount_ends`.
 - Persian queries match best.
 
 ## Configuration

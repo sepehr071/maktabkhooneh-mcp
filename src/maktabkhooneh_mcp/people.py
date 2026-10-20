@@ -36,7 +36,7 @@ def _view(n: dict[str, Any], depth: int) -> dict[str, Any]:
 
 
 @tool("Course categories")
-async def mk_categories(
+async def mkh_categories(
     slug: Annotated[
         str | None,
         Field(
@@ -54,7 +54,7 @@ async def mk_categories(
         ),
     ] = 1,
 ) -> dict[str, Any]:
-    """Category tree (about 680 nodes in 11 top-level groups): slugs for mk_browse, mk_free_courses, mk_cheapest, mk_deals.
+    """Category tree (about 680 nodes in 11 top-level groups): slugs for mkh_browse, mkh_free_courses, mkh_cheapest, mkh_deals.
 
     No arguments = the 11 top-level groups with their sub-categories. slug = one subtree. query = title search with path.
     """
@@ -67,12 +67,12 @@ async def mk_categories(
         for n, p in nodes:
             if n["slug"] == slug:
                 return {"path": list(p), **_view(n, depth)}
-        raise ApiError(f"No category with slug '{slug}'. Use mk_categories(query=...) to find it.", 404)
+        raise ApiError(f"No category with slug '{slug}'. Use mkh_categories(query=...) to find it.", 404)
     return {"categories": [_view(n, depth) for n in tree if n.get("public_show", True)]}
 
 
 @tool("Teacher profile")
-async def mk_teacher(
+async def mkh_teacher(
     teacher: Annotated[
         str,
         Field(
@@ -84,7 +84,7 @@ async def mk_teacher(
 ) -> dict[str, Any]:
     """A teacher's profile (bio, students, rating, teaching hours, links) and their courses with prices.
 
-    Next: mk_course for one of the courses.
+    Next: mkh_course for one of the courses.
     """
     t, cs = await _both(f"/accounts/teacher/{teacher}/", f"/accounts/teacher/{teacher}/courses/")
     social = {k: v for k, v in (t.get("social_media") or {}).items() if v}
@@ -115,7 +115,7 @@ async def _orgs() -> list[dict[str, Any]]:
 
 
 @tool("Publishers")
-async def mk_organizations(
+async def mkh_organizations(
     query: Annotated[
         str | None, Field(max_length=60, description="Part of the name, Persian or English, e.g. 'دانشگاه' or 'udemy'.")
     ] = None,
@@ -123,8 +123,8 @@ async def mk_organizations(
 ) -> dict[str, Any]:
     """Course publishers (universities, companies, Maktabkhooneh itself, about 180) with the id used as a filter.
 
-    Names come from the site map, so word separators are approximate. Next: mk_organization, or pass the id as
-    organization_ids to mk_browse.
+    Names come from the site map, so word separators are approximate. Next: mkh_organization, or pass the id as
+    organization_ids to mkh_browse.
     """
     orgs = await _orgs()
     q = (query or "").lower().replace(" ", "-")
@@ -133,17 +133,17 @@ async def mk_organizations(
 
 
 @tool("Publisher profile")
-async def mk_organization(
-    org_id: Annotated[int, Field(ge=1, le=100_000, description="Publisher id from mk_organizations, e.g. 2 or 3.")],
+async def mkh_organization(
+    org_id: Annotated[int, Field(ge=1, le=100_000, description="Publisher id from mkh_organizations, e.g. 2 or 3.")],
     limit: Annotated[int, Field(ge=1, le=30, description="Courses to list (most popular first).")] = 10,
 ) -> dict[str, Any]:
     """A publisher's totals (courses, students, rating) and its most popular courses.
 
-    Next: mk_course, or mk_browse with organization_ids for filters and paging.
+    Next: mkh_course, or mkh_browse with organization_ids for filters and paging.
     """
     org = next((o for o in await _orgs() if o["id"] == org_id), None)
     if not org:
-        raise ApiError(f"No publisher with id {org_id}. Use mk_organizations to list them.", 404)
+        raise ApiError(f"No publisher with id {org_id}. Use mkh_organizations to list them.", 404)
     info = await api(f"/organization/{org['slug']}/")
     cs = await courses._browse("-", {"sorting": "popular", "organizations": [org_id]}, 1, limit)
     desc = info.get("description")
