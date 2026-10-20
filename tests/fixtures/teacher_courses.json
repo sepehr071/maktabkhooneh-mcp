@@ -1,0 +1,161 @@
+[
+ {
+  "id": 12029,
+  "slug": "آموزش-گیت-جادی",
+  "title": "آموزش جامع گیت و گیت هاب 2026",
+  "slug_id": 12029,
+  "prices": {
+   "real": 1299000,
+   "discounted": 909300
+  },
+  "discount": 30.0,
+  "units_count": 48,
+  "required_hours": 29,
+  "no_of_students": 31738,
+  "organization": {
+   "slug": "مکتبخونه",
+   "name": "مکتب‌خونه",
+   "id": 2,
+   "obj_type": "organization"
+  },
+  "teachers": [
+   {
+    "slug": "jadi-mirmirani",
+    "full_name": "جادی میرمیرانی",
+    "teacher_id": 252,
+    "landing_view": true,
+    "id": 252,
+    "obj_type": "teacher"
+   }
+  ],
+  "specifics": {
+   "type": "PLUS",
+   "avg_rating": 4.8,
+   "content_grouping": {
+    "index": "contentGroup1",
+    "name": "Plus Courses"
+   },
+   "rating_count": 2356,
+   "certification": true,
+   "carousel_discount": "",
+   "has_subtitle": false,
+   "is_last_version": true,
+   "labels": {
+    "main": {
+     "key": "CERTIFICATE",
+     "value": "گواهی‌نامه"
+    },
+    "business": {
+     "key": "POPULAR",
+     "value": "محبوب کاربران"
+    }
+   }
+  },
+  "obj_type": "course"
+ },
+ {
+  "id": 10465,
+  "slug": "آموزش-برنامه-نویسی-با-پایتون-مقدماتی",
+  "title": "آموزش برنامه نویسی جامع پایتون",
+  "slug_id": 346,
+  "prices": {
+   "real": 2599000,
+   "discounted": 1299500
+  },
+  "discount": 50.0,
+  "units_count": 82,
+  "required_hours": 74,
+  "no_of_students": 270410,
+  "organization": {
+   "slug": "مکتبخونه",
+   "name": "مکتب‌خونه",
+   "id": 2,
+   "obj_type": "organization"
+  },
+  "teachers": [
+   {
+    "slug": "jadi-mirmirani",
+    "full_name": "جادی میرمیرانی",
+    "teacher_id": 252,
+    "landing_view": true,
+    "id": 252,
+    "obj_type": "teacher"
+   }
+  ],
+  "specifics": {
+   "type": "PLUS",
+   "avg_rating": 4.7,
+   "content_grouping": {
+    "index": "contentGroup1",
+    "name": "Plus Courses"
+   },
+   "rating_count": 23017,
+   "certification": true,
+   "carousel_discount": "",
+   "has_subtitle": false,
+   "is_last_version": true,
+   "labels": {
+    "main": {
+     "key": "CERTIFICATE",
+     "value": "گواهی‌نامه"
+    },
+    "business": {
+     "key": "POPULAR",
+     "value": "محبوب کاربران"
+    }
+   }
+  },
+  "obj_type": "course"
+ },
+ {
+  "id": 1555,
+  "slug": "آموزش-رایگان-آزمون-lpic1-1555",
+  "title": "آمادگی آزمون LPIC-1",
+  "slug_id": 711,
+  "prices": {
+   "real": 0,
+   "discounted": 0
+  },
+  "discount": null,
+  "units_count": 81,
+  "required_hours": 24,
+  "no_of_students": 44376,
+  "organization": {
+   "slug": "مکتبخونه",
+   "name": "مکتب‌خونه",
+   "id": 2,
+   "obj_type": "organization"
+  },
+  "teachers": [
+   {
+    "slug": "jadi-mirmirani",
+    "full_name": "جادی میرمیرانی",
+    "teacher_id": 252,
+    "landing_view": true,
+    "id": 252,
+    "obj_type": "teacher"
+   }
+  ],
+  "specifics": {
+   "type": "MAKTAB",
+   "avg_rating": 4.8,
+   "content_grouping": {
+    "index": "contentGroup2",
+    "name": "non-Plus Courses"
+   },
+   "rating_count": 1102,
+   "certification": false,
+   "carousel_discount": "",
+   "has_subtitle": false,
+   "is_last_version": true,
+   "labels": {
+    "main": null,
+    "business": {
+     "key": "POPULAR",
+     "value": "محبوب کاربران"
+    }
+   }
+  },
+  "obj_type": "course"
+ }
+]

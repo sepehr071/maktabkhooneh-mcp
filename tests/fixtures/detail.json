@@ -1,0 +1,280 @@
+{
+ "id": 1318,
+ "full_course_sale": true,
+ "course_content_sale": true,
+ "slug_id": 1318,
+ "slug": "یادگیری-ماشین-پایتون",
+ "version_number": 1,
+ "level": "مقدماتی",
+ "title": "آموزش یادگیری ماشین با پایتون",
+ "heading": "داده‌ها را با پایتون آماده کنید و مدل‌های یادگیری ماشین را برای پیش‌بینی، دسته‌بندی و پیشنهاد محتوا بسازید.",
+ "type": "PLUS",
+ "avg_rating": 4.6,
+ "extra_description": "",
+ "content_grouping": {
+  "index": "contentGroup1",
+  "name": "Plus Courses"
+ },
+ "price": {
+  "FULL": 4999000,
+  "CONTENT": 3999000,
+  "UPGRADE": 999000
+ },
+ "discounted_price": {
+  "FULL": 1999600,
+  "CONTENT": 1599600,
+  "UPGRADE": 999000
+ },
+ "discount_display": {
+  "FULL": [
+   "%60",
+   60,
+   "2026-10-14T23:59:00",
+   "2026-10-22T23:59:00"
+  ],
+  "CONTENT": [
+   "%60",
+   60,
+   "2026-10-14T23:59:00",
+   "2026-10-22T23:59:00"
+  ],
+  "UPGRADE": null
+ },
+ "course_effort_time": "33 ساعت",
+ "required_hours": 33,
+ "content_hours": 13,
+ "business_required_hours": 13,
+ "project_hours": 21,
+ "required_projects": true,
+ "ongoing": false,
+ "versioning_info": [],
+ "has_auto_examination": false,
+ "certif_organization": {
+  "organization_id": 2,
+  "name": "مکتب‌خونه",
+  "slug": "مکتبخونه",
+  "course_count": 2955
+ },
+ "publisher": {
+  "organization_id": 2,
+  "name": "مکتب‌خونه",
+  "slug": "مکتبخونه",
+  "course_count": 2955
+ },
+ "publish_status": "NORMAL_PUBLISH",
+ "view_access": 10,
+ "is_downloadable": "ALL",
+ "certification": true,
+ "business_certification": true,
+ "has_review": true,
+ "has_subtitle": false,
+ "description": "<p>دوره آموزش یادگیری ماشین لرنینگ با پایتون یک مسیر جامع و کاربردی برای ورود حرفه&zwnj;ای به دنیا هوش مصنوعی است که مفاهیم را به زبانی ساده و قابل فهم آموزش می&zwnj;دهد. این فناوری به شما کمک می&zwnj;کند از دل داده&zwnj;ها معنا استخراج کنید و سیستم&zwnj;هایی بسازید که بتوانند به&zwnj;صورت خودکار فکر کنند، الگوها را تشخیص دهند و به نتایج قابل اعتماد و کاربردی برسند.</p>\r\n<p>دوره ماشین لرنینگ جادی به&zwnj;صورت کامل و پروژه&zwnj;محور طراحی شده تا مهارت&zwnj;های عملی و مورد نیاز بازار کار را در شما تقویت کند. اگر به&zwnj;دنبال ارتقا مهارت&zwnj;های شغلی یا ایجاد یک تغییر جدی در مسیر حرفه&zwnj;ای خود هستید، این آموزش یک انتخاب هوشمندانه برای شماست. همین حالا برای ثبت&zwnj;نام در دوره و مشاهده سرفصل&zwnj;ها اقدام کنید و یک قدم جلوتر از دیگران باشید.</p>\r\n<h2>معرفی دوره آموزش یادگیری ماشین لرنینگ با پایتون</h2>\r\n<p><a href=\"https://maktabkhooneh.org/learn/python-for-deep-learning/\" target=\"_blank\" rel=\"noopener\">آموزش یادگیری ماشین با پایتون</a>، مسیر ساختارمندی برای ورود اصولی به دنیا Machine Learning است که شما را از سطح مبتدی تا درک حرفه&zwnj;ای این حوزه همراهی می&zwnj;کند. در این دوره با مفاهیم کلیدی و کاربردی مانند رگرسیون، دسته&zwnj;بندی، خوشه&zwnj;بندی و سیستم&zwnj;های توصیه&zwnj;گ",
+ "prerequisite_courses": [
+  {
+   "id": 10465,
+   "slug": "آموزش-برنامه-نویسی-با-پایتون-مقدماتی",
+   "title": "آموزش برنامه نویسی جامع پایتون",
+   "slug_id": 346,
+   "prices": {
+    "real": 2599000,
+    "discounted": 1299500
+   },
+   "discount": 50.0,
+   "units_count": 82,
+   "required_hours": 74,
+   "no_of_students": 270410,
+   "organization": {
+    "slug": "مکتبخونه",
+    "name": "مکتب‌خونه",
+    "id": 2,
+    "obj_type": "organization"
+   },
+   "teachers": [
+    {
+     "slug": "jadi-mirmirani",
+     "full_name": "جادی میرمیرانی",
+     "teacher_id": 252,
+     "landing_view": true,
+     "id": 252,
+     "obj_type": "teacher"
+    }
+   ],
+   "specifics": {
+    "type": "PLUS",
+    "avg_rating": 4.7,
+    "content_grouping": {
+     "index": "contentGroup1",
+     "name": "Plus Courses"
+    },
+    "rating_count": 23017,
+    "certification": true,
+    "carousel_discount": "",
+    "has_subtitle": false,
+    "is_last_version": true,
+    "labels": {
+     "main": {
+      "key": "CERTIFICATE",
+      "value": "گواهی‌نامه"
+     },
+     "business": {
+      "key": "POPULAR",
+      "value": "محبوب کاربران"
+     }
+    }
+   },
+   "obj_type": "course"
+  }
+ ],
+ "categories": {
+  "id": 4,
+  "title": "پایتون",
+  "slug": "python",
+  "parent": {
+   "id": 76,
+   "title": "زبان‌های برنامه‌نویسی",
+   "slug": "programming-languages",
+   "parent": {
+    "id": 58,
+    "title": "برنامه‌نویسی",
+    "slug": "programming",
+    "parent": null
+   }
+  }
+ },
+ "prerequisite_description": "<p>این دوره آموزشی برای کسانی که علاقه&shy;&zwnj;مند یادگیری ماشین هستند، مناسب خواهد بود. در کنار این افراد، کسانی که با زبان برنامه&zwnj;&shy;نویسی پایتون آشنا هستند نیز می&shy;&zwnj;توانند در این دوره آموزشی از مباحث ارائه شده استفاده کنند. برای شرکت در این دوره و استفاده همه جانبه از مباحث ارائه شده آشنایی با زبان برنامه&zwnj;&shy;نویسی پایتون لازم به نظر می&zwnj;&shy;رسد.</p>",
+ "faq_structured_data": "",
+ "course_faq": [
+  {
+   "id": 91,
+   "type": "COURSE",
+   "type_text": "سوالات دوره‌ها",
+   "question": "یادگیری ماشین پیش‌نیاز دارد؟",
+   "answer": "آشنایی با مفاهیم پایه پایتون، آمار و جبر خطی می‌تواند کمک‌کننده باشد، اما دوره به‌صورت مرحله‌به‌مرحله طراحی شده تا همه افراد بتوانند پیشرفت کنند."
+  },
+  {
+   "id": 92,
+   "type": "COURSE",
+   "type_text": "سوالات دوره‌ها",
+   "question": "بعد از دوره یادگیری ماشین جادی چه توانایی‌هایی خواهم داشت؟",
+   "answer": "می‌توانید مدل‌های رگرسیون، دسته‌بندی و خوشه‌بندی را طراحی و اجرا کنید، داده‌ها را آماده‌سازی کنید، سیستم‌های توصیه‌گر بسازید و عملکرد مدل‌ها را ارزیابی و بهینه کنید."
+  },
+  {
+   "id": 93,
+   "type": "COURSE",
+   "type_text": "سوالات دوره‌ها",
+   "question": "آیا دوره لرنینگ جادی پروژه‌محور است و تمرین عملی دارد؟",
+   "answer": "بله، دوره به‌صورت کامل پروژه‌محور طراحی شده و فرصت تمرین عملی روی مسائل واقعی را فراهم می‌کند."
+  }
+ ],
+ "general_faq": [],
+ "teachers": [
+  {
+   "teacher_id": 252,
+   "slug": "jadi-mirmirani",
+   "full_name": "جادی میرمیرانی",
+   "headline": "برنامه نویس، مدیر سیستم، آموزشگر، پادکستر، بلاگر، هکر، یوتیوبر، دوچرخه سوار و چند تا چیز دیگه. خوشحال و خندون و مثبت",
+   "landing_view": true,
+   "description": "<p>جادی به معنای حقیقی کلمه، یک گیک و یک هکر است، البته منظور از هکر، دزدی پسورد و ایمیل مردم نیست! بلکه به معنی عشق به دانستن و عشق به تحقیق درباره خیلی از چیزهایی هست که می‌بینم و می‌شنویم. جادی بیشتر از ۲۰ سال است که به صورت حرفه‌ای برنامه‌نویسی می‌کند و تجربیات زیادی در این زمینه داره و در شرکت‌",
+   "course_count": 9,
+   "student_count": 375902,
+   "rating_avg": 4.6,
+   "rating_count": 38218,
+   "id": 252,
+   "obj_type": "teacher"
+  }
+ ],
+ "course_features": [
+  {
+   "id": 5,
+   "modified_date": "2023-02-28T16:55:35.179050",
+   "created_date": "2021-12-07T15:03:15.704503",
+   "title": "گواهی‌نامه مکتب‌خونه",
+   "description": "<p>در صورت قبولی در دوره، گواهی نامه رسمی پایان دوره توسط مکتب&zwnj;خونه به اسم شما صادر شده و در اختیار شما قرار می گیرد.</p>\r\n<a href=\"https://maktabkhooneh.org/media/uploads/%DA%AF%D9%88%D8%A7%D9%8",
+   "tiny_title": "گواهی‌نامه مکتب‌خونه",
+   "tiny_description": "در صورت قبولی در دوره، گواهی نامه رسمی پایان دوره توسط مکتب‌خونه به اسم شما صادر شده و در اختیار شما قرار می گیرد.",
+   "importance": 10,
+   "pricing_pop_up": true
+  },
+  {
+   "id": 12,
+   "modified_date": "2021-12-07T15:03:15.733578",
+   "created_date": "2021-12-07T15:03:15.704503",
+   "title": "خدمات منتورینگ",
+   "description": "<p>خدمات منتورینگ به معنای برخورداری دانشجو از راهنما یا پشتیبان علمی در طول گذراندن دوره می&zwnj;باشد. این خدمات شامل پاسخگویی به سوالات آموزشی(در قالب تیکتینگ)، تصحیح آزمون یا پروژه های دوره و ارائه",
+   "tiny_title": "خدمات منتورینگ",
+   "tiny_description": "خدمات منتورینگ به معنای برخورداری دانشجو از راهنما یا پشتیبان علمی در طول گذراندن دوره می‌باشد.",
+   "importance": 5,
+   "pricing_pop_up": false
+  }
+ ],
+ "is_business_course": false,
+ "meta_data": {
+  "indexing": true,
+  "title": "آموزش یادگیری ماشین با پایتون | ماشین لرنینگ با جادی",
+  "description": "دوره یادگیری ماشین جادی به شما کمک می‌کند علاوه بر آموزش مقدمات به مباحث جدید و اساسی یادگیری ماشین با پایتون، مهارت برنامه­‌نویسی پایتون خود را افزایش دهید.",
+  "keywords": null,
+  "og_title": "آموزش یادگیری ماشین با پایتون | ماشین لرنینگ با جادی",
+  "og_description": "دوره یادگیری ماشین جادی به شما کمک می‌کند علاوه بر آموزش مقدمات به مباحث جدید و اساسی یادگیری ماشین با پایتون، مهارت برنامه­‌نویسی پایتون خود را افزایش دهید.",
+  "og_image": "https://media1.maktabkhooneh.org/courses/images/machin.learning_NvSv1jL_1403-08-16-164234254.webp?expire=4893471932&token=45b68034556997672523da382d3e5f0b&md5=RbaANFVpl2clI9o4LT5fCw==",
+  "og_video": "https://cdn.maktabkhooneh.org/videos/hq4950098275028240.mp4?expire=4893471932&token=c5a4f2a720625cefb123be84b81ee7ba&md5=xaTypyBiXO-xI76EuB7nug==",
+  "price": 4999000,
+  "product_id": 1318,
+  "canonical_address": "https://maktabkhooneh.org/course/%DB%8C%D8%A7%D8%AF%DA%AF%DB%8C%D8%B1%DB%8C-%D9%85%D8%A7%D8%B4%DB%8C%D9%86-%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86-mk1318/"
+ },
+ "learning_goals": [],
+ "original_version_id": 1318,
+ "latest_update_date": "2021/12/07",
+ "labels": {
+  "main": {
+   "key": "CERTIFICATE",
+   "value": "گواهی‌نامه"
+  },
+  "business": {
+   "key": "TRENDING",
+   "value": "پرطرفدار"
+  }
+ },
+ "published_date": "2021-10-05T20:41:58.636605",
+ "is_last_version": true,
+ "final_version_slug": null,
+ "final_version_slug_id": null,
+ "final_version_number": null,
+ "course_foruming": true,
+ "topics": [
+  {
+   "id": 4,
+   "title": "آموزش پایتون",
+   "slug": "python"
+  },
+  {
+   "id": 47,
+   "title": "آموزش ماشین لرنینگ",
+   "slug": "machine-learning"
+  },
+  {
+   "id": 54,
+   "title": "آموزش مبانی هوش مصنوعی",
+   "slug": "fondamental-artificial-intelligence"
+  },
+  {
+   "id": 76,
+   "title": "آموزش زبان‌های برنامه‌نویسی",
+   "slug": "programming-languages"
+  },
+  {
+   "id": 58,
+   "title": "آموزش برنامه‌نویسی",
+   "slug": "programming"
+  }
+ ],
+ "unit_count": 45,
+ "student_count": 49097,
+ "question_count": 30,
+ "assignment_count": 13,
+ "project_count": 4,
+ "online_project_count": 0,
+ "text_unit_count": 0,
+ "rating_count": 3021,
+ "attachment_count": 2,
+ "video_hours": 13
+}

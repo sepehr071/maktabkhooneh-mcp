@@ -1,0 +1,160 @@
+{
+ "filters": null,
+ "courses": {
+  "count": 740,
+  "next": "https://maktabkhooneh.org/api/v1/courses/categories/-/search/?limit=3&limit=3&page=2&sorting=popular&types=MAKTAB",
+  "previous": null,
+  "results": [
+   {
+    "id": 748,
+    "slug": "آزمون-تعیین-سطح-انگلیسی",
+    "title": "تعیین سطح زبان انگلیسی",
+    "slug_id": 748,
+    "prices": {
+     "real": 0,
+     "discounted": 0
+    },
+    "discount": null,
+    "units_count": 0,
+    "required_hours": "1:00",
+    "no_of_students": 145562,
+    "organization": {
+     "slug": "مکتبخونه",
+     "name": "مکتب‌خونه",
+     "id": 2,
+     "obj_type": "organization"
+    },
+    "teachers": [
+     {
+      "slug": "جمعی-اساتید",
+      "full_name": "جمعی از اساتید",
+      "teacher_id": 147,
+      "landing_view": false,
+      "id": 147,
+      "obj_type": "teacher"
+     }
+    ],
+    "specifics": {
+     "type": "MAKTAB",
+     "avg_rating": 4.2,
+     "content_grouping": {
+      "index": "contentGroup2",
+      "name": "non-Plus Courses"
+     },
+     "rating_count": 5696,
+     "certification": false,
+     "carousel_discount": "",
+     "has_subtitle": false,
+     "is_last_version": true,
+     "labels": {
+      "main": null,
+      "business": null
+     }
+    },
+    "obj_type": "course"
+   },
+   {
+    "id": 1555,
+    "slug": "آموزش-رایگان-آزمون-lpic1-1555",
+    "title": "آمادگی آزمون LPIC-1",
+    "slug_id": 711,
+    "prices": {
+     "real": 0,
+     "discounted": 0
+    },
+    "discount": null,
+    "units_count": 81,
+    "required_hours": 24,
+    "no_of_students": 44376,
+    "organization": {
+     "slug": "مکتبخونه",
+     "name": "مکتب‌خونه",
+     "id": 2,
+     "obj_type": "organization"
+    },
+    "teachers": [
+     {
+      "slug": "jadi-mirmirani",
+      "full_name": "جادی میرمیرانی",
+      "teacher_id": 252,
+      "landing_view": true,
+      "id": 252,
+      "obj_type": "teacher"
+     }
+    ],
+    "specifics": {
+     "type": "MAKTAB",
+     "avg_rating": 4.8,
+     "content_grouping": {
+      "index": "contentGroup2",
+      "name": "non-Plus Courses"
+     },
+     "rating_count": 1102,
+     "certification": false,
+     "carousel_discount": "",
+     "has_subtitle": false,
+     "is_last_version": true,
+     "labels": {
+      "main": null,
+      "business": {
+       "key": "POPULAR",
+       "value": "محبوب کاربران"
+      }
+     }
+    },
+    "obj_type": "course"
+   },
+   {
+    "id": 1282,
+    "slug": "آموزش-رایگان-استاتیک",
+    "title": "آموزش رایگان استاتیک",
+    "slug_id": 1282,
+    "prices": {
+     "real": 0,
+     "discounted": 0
+    },
+    "discount": null,
+    "units_count": 30,
+    "required_hours": 50,
+    "no_of_students": 39064,
+    "organization": {
+     "slug": "نوشیروانی-بابل",
+     "name": "دانشگاه صنعتی نوشیروانی بابل",
+     "id": 71,
+     "obj_type": "organization"
+    },
+    "teachers": [
+     {
+      "slug": "حسین-یوسفپور",
+      "full_name": "حسین یوسف‌پور",
+      "teacher_id": 833,
+      "landing_view": false,
+      "id": 833,
+      "obj_type": "teacher"
+     }
+    ],
+    "specifics": {
+     "type": "MAKTAB",
+     "avg_rating": 4.8,
+     "content_grouping": {
+      "index": "contentGroup2",
+      "name": "non-Plus Courses"
+     },
+     "rating_count": 1296,
+     "certification": false,
+     "carousel_discount": "",
+     "has_subtitle": false,
+     "is_last_version": true,
+     "labels": {
+      "main": null,
+      "business": {
+       "key": "POPULAR",
+       "value": "محبوب کاربران"
+      }
+     }
+    },
+    "obj_type": "course"
+   }
+  ]
+ }
+}

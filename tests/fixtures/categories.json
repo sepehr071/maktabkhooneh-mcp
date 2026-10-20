@@ -1,0 +1,245 @@
+[
+ {
+  "id": 58,
+  "title": "برنامه‌نویسی",
+  "subtitle": "آموزش برنامه نویسی",
+  "slug": "programming",
+  "public_show": true,
+  "children": [
+   {
+    "id": 76,
+    "title": "زبان‌های برنامه‌نویسی",
+    "subtitle": "",
+    "slug": "programming-languages",
+    "public_show": true,
+    "children": [
+     {
+      "id": 4,
+      "title": "پایتون",
+      "subtitle": "",
+      "slug": "python",
+      "public_show": true,
+      "children": null,
+      "score": 871
+     },
+     {
+      "id": 3,
+      "title": "اصول برنامه‌نویسی",
+      "subtitle": "",
+      "slug": "principles-programming",
+      "public_show": true,
+      "children": null,
+      "score": 0
+     },
+     {
+      "id": 5,
+      "title": "جاوا",
+      "subtitle": "آموزش زبان برنامه‌نویسی جاوا",
+      "slug": "java",
+      "public_show": true,
+      "children": null,
+      "score": 125
+     },
+     {
+      "id": 6,
+      "title": "جاوا اسکریپت",
+      "subtitle": "",
+      "slug": "java-script",
+      "public_show": true,
+      "children": null,
+      "score": 152
+     }
+    ]
+   },
+   {
+    "id": 992,
+    "title": "هوش مصنوعی و علم داده",
+    "subtitle": "",
+    "slug": "ai-data-science",
+    "public_show": true,
+    "children": [
+     {
+      "id": 47,
+      "title": "ماشین لرنینگ",
+      "subtitle": "آموزش یادگیری ماشین",
+      "slug": "machine-learning",
+      "public_show": true,
+      "children": null,
+      "score": 132
+     },
+     {
+      "id": 52,
+      "title": "ChatGPT",
+      "subtitle": "",
+      "slug": "chat-gpt",
+      "public_show": true,
+      "children": null,
+      "score": 26
+     },
+     {
+      "id": 664,
+      "title": "LLM",
+      "subtitle": "",
+      "slug": "llm",
+      "public_show": true,
+      "children": null,
+      "score": 0
+     }
+    ]
+   },
+   {
+    "id": 59,
+    "title": "طراحی سایت",
+    "subtitle": "آموزش برنامه نویسی وب",
+    "slug": "web-design",
+    "public_show": true,
+    "children": [
+     {
+      "id": 19,
+      "title": "برنامه‌نویسی فرانت اند",
+      "subtitle": "آموزش طراحی وبسایت",
+      "slug": "front-end-programming",
+      "public_show": true,
+      "children": null,
+      "score": 36
+     },
+     {
+      "id": 18,
+      "title": "جنگو",
+      "subtitle": "",
+      "slug": "django",
+      "public_show": true,
+      "children": null,
+      "score": 108
+     },
+     {
+      "id": 20,
+      "title": "برنامه‌نویسی بک اند",
+      "subtitle": "",
+      "slug": "backend-programming",
+      "public_show": true,
+      "children": null,
+      "score": 0
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": 1,
+  "title": "هنر",
+  "subtitle": "آموزش رشته‌های هنر",
+  "slug": "art",
+  "public_show": true,
+  "children": [
+   {
+    "id": 34,
+    "title": "مبانی هنر",
+    "subtitle": "آموزش تاریخ و مبانی هنر",
+    "slug": "fondamental-art",
+    "public_show": true,
+    "children": [
+     {
+      "id": 745,
+      "title": "سبک سورئالیسم",
+      "subtitle": "",
+      "slug": "surrealism-style",
+      "public_show": true,
+      "children": null,
+      "score": 0
+     },
+     {
+      "id": 558,
+      "title": "روانشناسی رنگ",
+      "subtitle": "",
+      "slug": "color-psychology",
+      "public_show": true,
+      "children": null,
+      "score": 0
+     },
+     {
+      "id": 747,
+      "title": "سبک کوبیسم",
+      "subtitle": "",
+      "slug": "cubism-style",
+      "public_show": true,
+      "children": null,
+      "score": 0
+     }
+    ]
+   },
+   {
+    "id": 10,
+    "title": "عکاسی",
+    "subtitle": "آموزش عکاسی حرفه‌ای از مبتدی تا پیشرفته با برترین اساتید",
+    "slug": "photography",
+    "public_show": true,
+    "children": [
+     {
+      "id": 564,
+      "title": "عکاسی صنعتی",
+      "subtitle": "",
+      "slug": "commercial-photography",
+      "public_show": true,
+      "children": null,
+      "score": 0
+     },
+     {
+      "id": 563,
+      "title": "عکاسی دیجیتال",
+      "subtitle": "",
+      "slug": "digital-photography",
+      "public_show": true,
+      "children": null,
+      "score": 0
+     },
+     {
+      "id": 567,
+      "title": "وسایل عکاسی",
+      "subtitle": "",
+      "slug": "photographic-equipment",
+      "public_show": true,
+      "children": null,
+      "score": 0
+     }
+    ]
+   },
+   {
+    "id": 391,
+    "title": "نقاشی",
+    "subtitle": "آموزش کامل نقاشی از مبتدی تا پیشرفته (مرحله به مرحله)",
+    "slug": "painting",
+    "public_show": true,
+    "children": [
+     {
+      "id": 585,
+      "title": "نقاشی مداد",
+      "subtitle": "",
+      "slug": "pencil-drawing",
+      "public_show": true,
+      "children": null,
+      "score": 0
+     },
+     {
+      "id": 578,
+      "title": "نقاشی اندام",
+      "subtitle": "",
+      "slug": "body-painting",
+      "public_show": true,
+      "children": null,
+      "score": 0
+     },
+     {
+      "id": 590,
+      "title": "نقاشی ضربه",
+      "subtitle": "",
+      "slug": "stroke-painting",
+      "public_show": true,
+      "children": null,
+      "score": 0
+     }
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,261 @@
+{
+ "courses": {
+  "count": 300,
+  "next": "https://maktabkhooneh.org/api/v1/courses/search/?limit=4&page=2&q=%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86",
+  "previous": null,
+  "results": [
+   {
+    "id": 10465,
+    "slug": "آموزش-برنامه-نویسی-با-پایتون-مقدماتی",
+    "title": "آموزش برنامه نویسی جامع پایتون",
+    "slug_id": 346,
+    "prices": {
+     "real": 2599000,
+     "discounted": 1299500
+    },
+    "discount": 50.0,
+    "units_count": 82,
+    "required_hours": 74,
+    "no_of_students": 270410,
+    "organization": {
+     "slug": "مکتبخونه",
+     "name": "مکتب‌خونه",
+     "id": 2,
+     "obj_type": "organization"
+    },
+    "teachers": [
+     {
+      "slug": "jadi-mirmirani",
+      "full_name": "جادی میرمیرانی",
+      "teacher_id": 252,
+      "landing_view": true,
+      "id": 252,
+      "obj_type": "teacher"
+     }
+    ],
+    "specifics": {
+     "type": "PLUS",
+     "avg_rating": 4.7,
+     "content_grouping": {
+      "index": "contentGroup1",
+      "name": "Plus Courses"
+     },
+     "rating_count": 23017,
+     "certification": true,
+     "carousel_discount": "",
+     "has_subtitle": false,
+     "is_last_version": true,
+     "labels": {
+      "main": {
+       "key": "CERTIFICATE",
+       "value": "گواهی‌نامه"
+      },
+      "business": {
+       "key": "POPULAR",
+       "value": "محبوب کاربران"
+      }
+     }
+    },
+    "obj_type": "course"
+   },
+   {
+    "id": 1318,
+    "slug": "یادگیری-ماشین-پایتون",
+    "title": "آموزش یادگیری ماشین با پایتون",
+    "slug_id": 1318,
+    "prices": {
+     "real": 4999000,
+     "discounted": 1999600
+    },
+    "discount": 60.0,
+    "units_count": 45,
+    "required_hours": 33,
+    "no_of_students": 49097,
+    "organization": {
+     "slug": "مکتبخونه",
+     "name": "مکتب‌خونه",
+     "id": 2,
+     "obj_type": "organization"
+    },
+    "teachers": [
+     {
+      "slug": "jadi-mirmirani",
+      "full_name": "جادی میرمیرانی",
+      "teacher_id": 252,
+      "landing_view": true,
+      "id": 252,
+      "obj_type": "teacher"
+     }
+    ],
+    "specifics": {
+     "type": "PLUS",
+     "avg_rating": 4.6,
+     "content_grouping": {
+      "index": "contentGroup1",
+      "name": "Plus Courses"
+     },
+     "rating_count": 3021,
+     "certification": true,
+     "carousel_discount": "",
+     "has_subtitle": false,
+     "is_last_version": true,
+     "labels": {
+      "main": {
+       "key": "CERTIFICATE",
+       "value": "گواهی‌نامه"
+      },
+      "business": {
+       "key": "TRENDING",
+       "value": "پرطرفدار"
+      }
+     }
+    },
+    "obj_type": "course"
+   },
+   {
+    "id": 12028,
+    "slug": "مسترکلاس-پایتون-2026",
+    "title": "مسترکلاس برنامه‌نویسی پایتون 2026: پیاده‌سازی 30+ پروژه کاربردی با پایتون",
+    "slug_id": 12028,
+    "prices": {
+     "real": 1499000,
+     "discounted": 899400
+    },
+    "discount": 40.0,
+    "units_count": 57,
+    "required_hours": 65,
+    "no_of_students": 9224,
+    "organization": {
+     "slug": "مکتبخونه",
+     "name": "مکتب‌خونه",
+     "id": 2,
+     "obj_type": "organization"
+    },
+    "teachers": [
+     {
+      "slug": "ali-bigdeli",
+      "full_name": "علی بیگدلی",
+      "teacher_id": 839,
+      "landing_view": true,
+      "id": 839,
+      "obj_type": "teacher"
+     }
+    ],
+    "specifics": {
+     "type": "PLUS",
+     "avg_rating": 4.7,
+     "content_grouping": {
+      "index": "contentGroup1",
+      "name": "Plus Courses"
+     },
+     "rating_count": 202,
+     "certification": true,
+     "carousel_discount": "",
+     "has_subtitle": false,
+     "is_last_version": true,
+     "labels": {
+      "main": {
+       "key": "CERTIFICATE",
+       "value": "گواهی‌نامه"
+      },
+      "business": {
+       "key": "TRENDING",
+       "value": "پرطرفدار"
+      }
+     }
+    },
+    "obj_type": "course"
+   },
+   {
+    "id": 12531,
+    "slug": "یادگیری-ماشین-صفر-صد-هوش-مصنوعی-پایتون-r-chat-gpt",
+    "title": "یادگیری ماشین از صفر تا صد: هوش مصنوعی، پایتون و R",
+    "slug_id": 12531,
+    "prices": {
+     "real": 2999000,
+     "discounted": 1799400
+    },
+    "discount": 40.0,
+    "units_count": 346,
+    "required_hours": 46,
+    "no_of_students": 10854,
+    "organization": {
+     "slug": "udemy",
+     "name": "Udemy",
+     "id": 133,
+     "obj_type": "organization"
+    },
+    "teachers": [
+     {
+      "slug": "آکادمی-گرولی-آموزش-مهارت-شغلی",
+      "full_name": "آکادمی گرولی",
+      "teacher_id": 14956,
+      "landing_view": true,
+      "id": 14956,
+      "obj_type": "teacher"
+     },
+     {
+      "slug": "hadelin-de-ponteves",
+      "full_name": "Hadelin de Ponteves",
+      "teacher_id": 16217,
+      "landing_view": true,
+      "id": 16217,
+      "obj_type": "teacher"
+     },
+     {
+      "slug": "kirill-eremenko",
+      "full_name": "Kirill Eremenko",
+      "teacher_id": 16301,
+      "landing_view": true,
+      "id": 16301,
+      "obj_type": "teacher"
+     },
+     {
+      "slug": "superdatascience-superdatascience-team",
+      "full_name": "SuperDataScience Team",
+      "teacher_id": 16302,
+      "landing_view": true,
+      "id": 16302,
+      "obj_type": "teacher"
+     },
+     {
+      "slug": "ligency-team",
+      "full_name": "Ligency Team",
+      "teacher_id": 16304,
+      "landing_view": true,
+      "id": 16304,
+      "obj_type": "teacher"
+     }
+    ],
+    "specifics": {
+     "type": "PLUS",
+     "avg_rating": 4.7,
+     "content_grouping": {
+      "index": "contentGroup1",
+      "name": "Plus Courses"
+     },
+     "rating_count": 159,
+     "certification": true,
+     "carousel_discount": "",
+     "has_subtitle": true,
+     "is_last_version": true,
+     "labels": {
+      "main": {
+       "key": "SUBTITLE",
+       "value": "زیرنویس"
+      },
+      "business": {
+       "key": "TRENDING",
+       "value": "پرطرفدار"
+      }
+     }
+    },
+    "obj_type": "course"
+   }
+  ]
+ },
+ "careers": [],
+ "extra": {
+  "query_id": "D7EAFA756B589395"
+ }
+}

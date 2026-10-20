@@ -1,0 +1,63 @@
+{
+ "count": 837,
+ "next": "https://maktabkhooneh.org/api/v1/courses/x-mk1318/reviews/?limit=4&offset=4",
+ "previous": null,
+ "results": [
+  {
+   "id": 2993906,
+   "user": {
+    "id": 0,
+    "full_name": "کاربر نمونه"
+   },
+   "rate": 5,
+   "review_description": "عالی",
+   "review_reply": "",
+   "created_date": "2026-10-19T21:05:38.505227",
+   "modified_date": "2026-10-19T21:05:52.014182",
+   "upvote_count": 0,
+   "downvote_count": 0
+  },
+  {
+   "id": 2992765,
+   "user": {
+    "id": 0,
+    "full_name": "کاربر نمونه"
+   },
+   "rate": 5,
+   "review_description": "عالی",
+   "review_reply": "",
+   "created_date": "2026-10-19T17:54:03.383801",
+   "modified_date": "2026-10-19T17:54:12.392177",
+   "upvote_count": 0,
+   "downvote_count": 0
+  },
+  {
+   "id": 2992016,
+   "user": {
+    "id": 0,
+    "full_name": "کاربر نمونه"
+   },
+   "rate": 5,
+   "review_description": "عالی و کاربردی و جامع",
+   "review_reply": "",
+   "created_date": "2026-10-19T15:53:10.170361",
+   "modified_date": "2026-10-19T15:53:22.307828",
+   "upvote_count": 0,
+   "downvote_count": 0
+  },
+  {
+   "id": 2989230,
+   "user": {
+    "id": 0,
+    "full_name": "کاربر نمونه"
+   },
+   "rate": 5,
+   "review_description": "بسیار عالی",
+   "review_reply": "",
+   "created_date": "2026-10-19T09:55:19.346063",
+   "modified_date": "2026-10-19T09:55:28.352064",
+   "upvote_count": 0,
+   "downvote_count": 0
+  }
+ ]
+}

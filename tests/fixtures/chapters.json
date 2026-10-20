@@ -1,0 +1,222 @@
+{
+ "chapters": [
+  {
+   "id": 4479,
+   "title": "فصل اول: مقدمه یادگیری ماشین با پایتون",
+   "slug": "فصل-اول-مقدمه-یادگیری-ماشین-پایتون",
+   "total_effort_time": "00:34",
+   "view_access": 10,
+   "units": [
+    {
+     "id": 42500,
+     "title": "به دوره یادگیری ماشین با پایتون خوش آمدید",
+     "slug": "ویدیو-دوره-یادگیری-ماشین-پایتون-خوش-آمدید",
+     "type": "lecture",
+     "effort_time_in_minutes": "\"06:30",
+     "indexing": true,
+     "view_access": 10,
+     "required": false
+    },
+    {
+     "id": 42501,
+     "title": "مقدمه یادگیری ماشین با پایتون",
+     "slug": "ویدیو-مقدمه-یادگیری-ماشین-پایتون",
+     "type": "lecture",
+     "effort_time_in_minutes": "\"19:07",
+     "indexing": true,
+     "view_access": 10,
+     "required": false
+    },
+    {
+     "id": 42502,
+     "title": "یادگیری ماشین بی‌نظارت و با نظارت",
+     "slug": "ویدیو-یادگیری-ماشین-بی-نظارت-با-نظارت",
+     "type": "lecture",
+     "effort_time_in_minutes": "\"06:16",
+     "indexing": true,
+     "view_access": 20,
+     "required": false
+    },
+    {
+     "id": 42333,
+     "title": "کوییز مقدمه یادگیری ماشین با پایتون",
+     "slug": "تمرین-کوییز-مقدمه-یادگیری-ماشین-پایتون",
+     "type": "assignment",
+     "effort_time_in_minutes": "\"03:00",
+     "indexing": true,
+     "view_access": 40,
+     "required": false
+    }
+   ]
+  },
+  {
+   "id": 4475,
+   "title": "فصل دوم: رگرسیون Regression",
+   "slug": "فصل-دوم-رگرسیون-regression",
+   "total_effort_time": "09:00",
+   "view_access": 10,
+   "units": [
+    {
+     "id": 42280,
+     "title": "مقدمه رگرسیون",
+     "slug": "ویدیو-مقدمه-رگرسیون",
+     "type": "lecture",
+     "effort_time_in_minutes": "\"16:04",
+     "indexing": true,
+     "view_access": 10,
+     "required": false
+    },
+    {
+     "id": 42281,
+     "title": "رگرسیون خطی ساده",
+     "slug": "ویدیو-رگرسیون-خطی-ساده",
+     "type": "lecture",
+     "effort_time_in_minutes": "\"15:44",
+     "indexing": true,
+     "view_access": 20,
+     "required": false
+    },
+    {
+     "id": 42635,
+     "title": "کوییز رگرسیون ساده",
+     "slug": "تمرین-کوییز-رگرسیون-ساده",
+     "type": "assignment",
+     "effort_time_in_minutes": "\"03:00",
+     "indexing": true,
+     "view_access": 40,
+     "required": false
+    },
+    {
+     "id": 42282,
+     "title": "ارزیابی مدل",
+     "slug": "ویدیو-ارزیابی-مدل",
+     "type": "lecture",
+     "effort_time_in_minutes": "\"17:14",
+     "indexing": true,
+     "view_access": 20,
+     "required": false
+    },
+    {
+     "id": 42284,
+     "title": "نوت‌بوک",
+     "slug": "ویدیو-نوت-بوک",
+     "type": "lecture",
+     "effort_time_in_minutes": "\"10:49",
+     "indexing": true,
+     "view_access": 40,
+     "required": false
+    },
+    {
+     "id": 42285,
+     "title": "Numpy",
+     "slug": "ویدیو-نامپای-numpy",
+     "type": "lecture",
+     "effort_time_in_minutes": "\"15:46",
+     "indexing": true,
+     "view_access": 40,
+     "required": false
+    },
+    {
+     "id": 42286,
+     "title": "Pandas",
+     "slug": "ویدیو-pandas",
+     "type": "lecture",
+     "effort_time_in_minutes": "\"21:11",
+     "indexing": true,
+     "view_access": 40,
+     "required": false
+    },
+    {
+     "id": 42287,
+     "title": "Matplotlib",
+     "slug": "ویدیو-matplotlib",
+     "type": "lecture",
+     "effort_time_in_minutes": "\"17:37",
+     "indexing": true,
+     "view_access": 40,
+     "required": false
+    },
+    {
+     "id": 42289,
+     "title": "آزمایشگاه رگرسیون ساده",
+     "slug": "ویدیو-آزمایشگاه-رگرسیون-ساده",
+     "type": "lecture",
+     "effort_time_in_minutes": "\"41:05",
+     "indexing": true,
+     "view_access": 40,
+     "required": false
+    },
+    {
+     "id": 42290,
+     "title": "رگرسیون چندگانه",
+     "slug": "ویدیو-رگرسیون-چندگانه",
+     "type": "lecture",
+     "effort_time_in_minutes": "\"10:26",
+     "indexing": true,
+     "view_access": 40,
+     "required": false
+    },
+    {
+     "id": 42636,
+     "title": "کوییز رگرسیون چندگانه",
+     "slug": "تمرین-کوییز-رگرسیون-چندگانه",
+     "type": "assignment",
+     "effort_time_in_minutes": "\"02:00",
+     "indexing": true,
+     "view_access": 40,
+     "required": false
+    },
+    {
+     "id": 42291,
+     "title": "آزمایشگاه رگرسیون چندگانه",
+     "slug": "ویدیو-آزمایشگاه-رگرسیون-چندگانه",
+     "type": "lecture",
+     "effort_time_in_minutes": "\"10:49",
+     "indexing": true,
+     "view_access": 40,
+     "required": false
+    },
+    {
+     "id": 42292,
+     "title": "رگرسیون غیر خطی",
+     "slug": "ویدیو-رگرسیون-غیر-خطی",
+     "type": "lecture",
+     "effort_time_in_minutes": "\"10:12",
+     "indexing": true,
+     "view_access": 40,
+     "required": false
+    },
+    {
+     "id": 42293,
+     "title": "آزمایشگاه چند جمله‌ای",
+     "slug": "ویدیو-آزمایشگاه-چند-جمله-ای",
+     "type": "lecture",
+     "effort_time_in_minutes": "\"19:37",
+     "indexing": true,
+     "view_access": 40,
+     "required": false
+    },
+    {
+     "id": 42295,
+     "title": "آزمایشگاه رگرسیون غیر خطی",
+     "slug": "ویدیو-آزمایشگاه-رگرسیون-غیر-خطی",
+     "type": "lecture",
+     "effort_time_in_minutes": "\"28:33",
+     "indexing": true,
+     "view_access": 40,
+     "required": false
+    },
+    {
+     "id": 42338,
+     "title": "پروژه رگرسیون Regression",
+     "slug": "پروژه-پروژه-رگرسیون-regression",
+     "type": "project",
+     "effort_time_in_minutes": "\"300:00",
+     "indexing": false,
+     "view_access": 40,
+     "required": true
+    }
+   ]
+  }
+ ]
+}
