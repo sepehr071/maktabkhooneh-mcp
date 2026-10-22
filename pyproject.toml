@@ -1,13 +1,13 @@
 [project]
 name = "maktabkhooneh-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "Unofficial read-only MCP server for Maktabkhooneh: search Persian online courses, compare prices and discounts, find free courses, read curricula and reviews."
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
 authors = [{ name = "Sepehr Radmard", email = "sepehrr80@gmail.com" }]
 requires-python = ">=3.10"
-keywords = ["mcp", "model-context-protocol", "maktabkhooneh", "iran", "courses", "education", "e-learning", "persian"]
+keywords = ["mcp", "mcp-server", "model-context-protocol", "maktabkhooneh", "iran", "persian", "farsi", "online-courses", "e-learning", "education", "course-search", "free-courses", "ai-agents", "claude"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
