@@ -1,6 +1,6 @@
 [project]
 name = "maktabkhooneh-mcp"
-version = "0.1.1"
+version = "0.1.2"
 description = "Unofficial read-only MCP server for Maktabkhooneh: search Persian online courses, compare prices and discounts, find free courses, read curricula and reviews."
 readme = "README.md"
 license = "MIT"
