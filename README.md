@@ -35,7 +35,7 @@ compare prices and discounts, find free courses, read curricula and learner revi
 - **Do not use when:** the user wants to enrol, pay, watch lessons, or needs their own account data.
 - **Output:** compact JSON. Prices in Toman (`final_price` is what you pay, 0 = free), rating 0-5 (absent = no ratings), numeric course ids pass between tools, paging with `next_page`.
 - **Machine-readable:** [`server.json`](https://github.com/sepehr071/maktabkhooneh-mcp/blob/main/server.json) and the
-  [awesome-iran-mcp catalog](https://github.com/sepehr071/awesome-iran-mcp).
+  [iran-mcp catalog](https://github.com/sepehr071/iran-mcp).
 
 ## Why
 
@@ -362,7 +362,7 @@ publishes to PyPI and the [MCP Registry](https://registry.modelcontextprotocol.i
 - [Fidibo MCP server](https://github.com/sepehr071/fidibo-mcp) for Persian ebooks and audiobooks
 - [Taaghche MCP server](https://github.com/sepehr071/taaghche-mcp) for Persian ebooks and audiobooks
 - [30book MCP server](https://github.com/sepehr071/30book-mcp) for Persian books
-- [awesome-iran-mcp](https://github.com/sepehr071/awesome-iran-mcp): catalog of all Iranian-service MCP servers
+- [iran-mcp](https://github.com/sepehr071/iran-mcp): catalog of all Iranian-service MCP servers
 
 ## Disclaimer
 
@@ -371,9 +371,9 @@ website, which can change without notice. Please keep request rates reasonable.
 
 ## Author
 
-<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/awesome-iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web. LinkedIn: linkedin.com/in/sepehr-radmard" width="100%"></a>
+<a href="https://www.linkedin.com/in/sepehr-radmard"><img src="https://raw.githubusercontent.com/sepehr071/iran-mcp/main/assets/author-banner.png" alt="Sepehr Radmard: open-source MCP servers for the Iranian web. LinkedIn: linkedin.com/in/sepehr-radmard" width="100%"></a>
 
-Built and maintained by **Sepehr Radmard** (سپهر رادمرد). Connect on [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) or follow [@sepehr071 on GitHub](https://github.com/sepehr071) for more MCP servers for Iranian websites, all listed in [awesome-iran-mcp](https://github.com/sepehr071/awesome-iran-mcp). If this saves you time, a star on the repo helps other people find it.
+Built and maintained by **Sepehr Radmard** (سپهر رادمرد). Connect on [LinkedIn](https://www.linkedin.com/in/sepehr-radmard) or follow [@sepehr071 on GitHub](https://github.com/sepehr071) for more MCP servers for Iranian websites, all listed in [iran-mcp](https://github.com/sepehr071/iran-mcp). If this saves you time, a star on the repo helps other people find it.
 
 ## License
 
