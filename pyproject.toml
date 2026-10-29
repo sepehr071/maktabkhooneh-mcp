@@ -29,6 +29,7 @@ dependencies = [
 [project.urls]
 Homepage = "https://github.com/sepehr071/maktabkhooneh-mcp"
 Issues = "https://github.com/sepehr071/maktabkhooneh-mcp/issues"
+Website = "https://mcpfarsi.ir/servers/maktabkhooneh/"
 
 [project.scripts]
 maktabkhooneh-mcp = "maktabkhooneh_mcp.server:main"
