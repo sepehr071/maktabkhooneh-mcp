@@ -27,9 +27,9 @@ async def test_search_maps_cards(client, api):
     assert api.params() == {"q": "پایتون", "sorting": "relevance", "page": "1", "limit": "4"}
     assert out["total"] == 300 and out["next_page"] == 2 and len(out["courses"]) == 4
     c = out["courses"][0]
-    assert c["id"] == 10465 and c["final_price"] == 1299500 and c["price"] == 2599000 and c["discount_pct"] == 50
+    assert c["id"] == 346 and c["final_price"] == 1299500 and c["price"] == 2599000 and c["discount_pct"] == 50
     assert c["free"] is False and c["kind"] == "PLUS" and c["organization"]["id"] == 2
-    assert c["teachers"][0]["slug"] == "jadi-mirmirani" and c["url"].endswith("/course/x-mk10465/")
+    assert c["teachers"][0]["slug"] == "jadi-mirmirani" and c["url"].endswith("/course/x-mk346/")
     assert "image_url" not in c
 
 

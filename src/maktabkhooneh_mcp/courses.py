@@ -58,10 +58,11 @@ def card(c: dict[str, Any]) -> dict[str, Any]:
     real, final = p.get("real") or 0, p.get("discounted") or 0
     s = c.get("specifics") or {}
     org = c.get("organization") or {}
+    cid = c.get("slug_id") or c["id"]  # the id in course URLs (mk<N>), which every tool takes; `id` can differ
     return {
-        "id": c["id"],
+        "id": cid,
         "title": c.get("title"),
-        "url": f"{SITE}/course/x-mk{c['id']}/",  # the site redirects any slug to the canonical page
+        "url": f"{SITE}/course/x-mk{cid}/",  # the site redirects any slug to the canonical page
         "final_price": final,
         "price": real if real != final else None,
         "discount_pct": round(c.get("discount") or 0) or None,
@@ -304,9 +305,9 @@ async def mkh_course(course_id: CourseId) -> dict[str, Any]:
     disp = (d.get("discount_display") or {}).get("FULL") or []
     pub = d.get("publisher") or {}
     return {
-        "id": d["id"],
+        "id": d.get("slug_id") or d["id"],
         "title": d.get("title"),
-        "url": course_url(d["id"], d.get("slug") or "x"),
+        "url": course_url(d.get("slug_id") or d["id"], d.get("slug") or "x"),
         "headline": d.get("heading"),
         "kind": d.get("type"),
         "level": d.get("level"),
@@ -340,7 +341,10 @@ async def mkh_course(course_id: CourseId) -> dict[str, Any]:
             for t in d.get("teachers") or []
         ],
         "publisher": {"id": pub.get("organization_id"), "name": pub.get("name")} if pub else None,
-        "prerequisites": [{"id": p.get("id"), "title": p.get("title")} for p in d.get("prerequisite_courses") or []],
+        "prerequisites": [
+            {"id": p.get("slug_id") or p.get("id"), "title": p.get("title")}
+            for p in d.get("prerequisite_courses") or []
+        ],
         "prerequisite_text": _text(d.get("prerequisite_description"), 400),
         "features": [f.get("title") for f in d.get("course_features") or []],
         "description": _text(d.get("description"), 1500),
