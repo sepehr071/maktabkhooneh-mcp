@@ -34,7 +34,7 @@ compare prices and discounts, find free courses, read curricula and learner revi
   Typical sequence: `mkh_search` (or `mkh_categories` -> `mkh_browse`) -> `mkh_course` -> `mkh_curriculum` or `mkh_reviews`.
 - **Use when:** the user wants to find an Iranian online course, compare price, level, hours and rating, find free or discounted courses, or look up a teacher or a university's courses.
 - **Do not use when:** the user wants to enrol, pay, watch lessons, or needs their own account data.
-- **Output:** compact JSON. Prices in Toman (`final_price` is what you pay, 0 = free), rating 0-5 (absent = no ratings), numeric course ids pass between tools, paging with `next_page`.
+- **Output:** compact JSON. Prices in Toman (`final_price` is what you pay, 0 = free), rating 0-5 (absent = no ratings), course ids are the number in the course URL (`.../course/x-mk<id>/`, the site's `slug_id`) and pass between tools, paging with `next_page`.
 - **Machine-readable:** [`server.json`](https://github.com/sepehr071/maktabkhooneh-mcp/blob/main/server.json) and the
   [iran-mcp catalog](https://github.com/sepehr071/iran-mcp).
 
