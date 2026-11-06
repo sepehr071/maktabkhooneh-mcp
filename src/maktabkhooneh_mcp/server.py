@@ -1,6 +1,7 @@
 """MCP server entry point: registers every read-only Maktabkhooneh tool."""
 
 import functools
+import inspect
 import json
 import logging
 
@@ -16,12 +17,12 @@ Unofficial, read-only access to Maktabkhooneh (maktabkhooneh.org, مکتب\u200c
 with a certificate). Nothing here can log in, enrol, buy or review.
 
 Workflow:
-1. Find courses: mkh_search (text query), or mkh_browse / mkh_free_courses with filters (type, level, hours, rating,
-   publisher, feature) inside a category. Slugs from mkh_categories, publisher ids from mkh_organizations.
-2. Prices: mkh_cheapest (cheapest for a topic or category) and mkh_deals (biggest discounts). The site cannot sort
-   or filter by price, so these scan the first 300 results and report scanned/total.
-3. One course: mkh_course (prices, hours, teachers, prerequisites), mkh_curriculum (lessons), mkh_reviews.
-4. People: mkh_teacher (slug from teachers[].slug), mkh_organization (publisher profile + popular courses).
+1. Find courses: mkh_search (text query), or mkh_browse / mkh_free_courses with filters inside a category. Slugs
+   from mkh_categories, publisher ids from mkh_organizations.
+2. Prices: mkh_cheapest and mkh_deals. The site cannot sort or filter by price, so these scan the first 300 results
+   and report scanned/total.
+3. One course: mkh_course, mkh_curriculum, mkh_reviews.
+4. People: mkh_teacher (slug from teachers[].slug), mkh_organization.
 List tools page with page / next_page (mkh_reviews with next_offset).
 
 Conventions: prices are Toman. final_price is what the customer pays (0 = free), price is the list price shown only
@@ -50,6 +51,7 @@ def compact(fn):
     async def run(*args, **kwargs):
         return json.dumps(_drop_nulls(await fn(*args, **kwargs)), ensure_ascii=False, separators=(",", ":"))
 
+    run.__doc__ = inspect.cleandoc(fn.__doc__ or "")
     return run
 
 
@@ -66,6 +68,12 @@ def _untitled(schema):
     if isinstance(schema, dict):
         if isinstance(schema.get("title"), str):
             del schema["title"]
+        any_of = schema.get("anyOf")
+        if isinstance(any_of, list) and len(any_of) == 2 and {"type": "null"} in any_of:
+            other = next(v for v in any_of if v != {"type": "null"})
+            if set(other) == {"type"} and isinstance(other["type"], str):  # X | None -> type [X, "null"]
+                del schema["anyOf"]
+                schema["type"] = [other["type"], "null"]
         for key, value in schema.items():
             for sub in value.values() if key == "properties" else [value]:  # a parameter may be named "title"
                 _untitled(sub)

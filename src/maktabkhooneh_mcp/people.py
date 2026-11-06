@@ -41,22 +41,18 @@ async def mkh_categories(
         str | None,
         Field(
             pattern=r"^[a-z0-9][a-z0-9-]{0,80}$",
-            description="Show this category and what is below it, e.g. 'programming'.",
+            description="Show this subtree, e.g. 'programming'.",
         ),
     ] = None,
-    query: Annotated[
-        str | None, Field(min_length=2, max_length=60, description="Find categories by title, e.g. 'پایتون' or 'زبان'.")
-    ] = None,
+    query: Annotated[str | None, Field(min_length=2, max_length=60, description="Title search, e.g. 'پایتون'.")] = None,
     depth: Annotated[
         int,
-        Field(
-            ge=1, le=3, description="Levels of sub-categories to show below slug (default 1; top level when no slug)."
-        ),
+        Field(ge=1, le=3, description="Sub-category levels to show."),
     ] = 1,
 ) -> dict[str, Any]:
-    """Category tree (about 680 nodes in 11 top-level groups): slugs for mkh_browse, mkh_free_courses, mkh_cheapest, mkh_deals.
+    """Category tree (about 680 nodes, 11 top-level groups): slugs for the course listing tools.
 
-    No arguments = the 11 top-level groups with their sub-categories. slug = one subtree. query = title search with path.
+    No arguments = top-level groups. slug = one subtree. query = title search with path.
     """
     tree = await api("/courses/categories/", ttl=DAY)
     nodes = _nodes(tree)
@@ -77,14 +73,14 @@ async def mkh_teacher(
         str,
         Field(
             pattern=r"^[^\s/?#.][^\s/?#]{0,79}$",
-            description="Teacher slug from a course (teachers[].slug), e.g. 'jadi-mirmirani'.",
+            description="Slug from teachers[].slug, e.g. 'jadi-mirmirani'.",
         ),
     ],
     limit: Annotated[int, Field(ge=1, le=30, description="Courses to list.")] = 10,
 ) -> dict[str, Any]:
     """A teacher's profile (bio, students, rating, teaching hours, links) and their courses with prices.
 
-    Next: mkh_course for one of the courses.
+    Next: mkh_course.
     """
     t, cs = await _both(f"/accounts/teacher/{teacher}/", f"/accounts/teacher/{teacher}/courses/")
     social = {k: v for k, v in (t.get("social_media") or {}).items() if v}
@@ -100,7 +96,7 @@ async def mkh_teacher(
         "rating": t.get("rating_avg") or None,
         "ratings_count": t.get("rating_count") or None,
         "links": social or None,
-        "courses": [courses.card(c) for c in cs[:limit]],
+        "courses": [{**courses.card(c), "teachers": None} for c in cs[:limit]],
     }
 
 
@@ -117,14 +113,13 @@ async def _orgs() -> list[dict[str, Any]]:
 @tool("Publishers")
 async def mkh_organizations(
     query: Annotated[
-        str | None, Field(max_length=60, description="Part of the name, Persian or English, e.g. 'دانشگاه' or 'udemy'.")
+        str | None, Field(max_length=60, description="Part of the name, e.g. 'دانشگاه' or 'udemy'.")
     ] = None,
     limit: Annotated[int, Field(ge=1, le=100, description="Publishers to list.")] = 30,
 ) -> dict[str, Any]:
     """Course publishers (universities, companies, Maktabkhooneh itself, about 180) with the id used as a filter.
 
-    Names come from the site map, so word separators are approximate. Next: mkh_organization, or pass the id as
-    organization_ids to mkh_browse.
+    Names come from the site map (separators approximate). Next: mkh_organization, or organization_ids of mkh_browse.
     """
     orgs = await _orgs()
     q = (query or "").lower().replace(" ", "-")
@@ -134,12 +129,12 @@ async def mkh_organizations(
 
 @tool("Publisher profile")
 async def mkh_organization(
-    org_id: Annotated[int, Field(ge=1, le=100_000, description="Publisher id from mkh_organizations, e.g. 2 or 3.")],
+    org_id: Annotated[int, Field(ge=1, le=100_000, description="Publisher id from mkh_organizations, e.g. 2.")],
     limit: Annotated[int, Field(ge=1, le=30, description="Courses to list (most popular first).")] = 10,
 ) -> dict[str, Any]:
     """A publisher's totals (courses, students, rating) and its most popular courses.
 
-    Next: mkh_course, or mkh_browse with organization_ids for filters and paging.
+    Next: mkh_course, or mkh_browse with organization_ids.
     """
     org = next((o for o in await _orgs() if o["id"] == org_id), None)
     if not org:
@@ -155,5 +150,5 @@ async def mkh_organization(
         "rating": info.get("rating_avg") or None,
         "ratings_count": info.get("rating_count") or None,
         "description": None if desc in (None, "", "no") else courses._text(desc, 600),
-        "courses": cs["courses"],
+        "courses": [{**c, "organization": None} for c in cs["courses"]],
     }

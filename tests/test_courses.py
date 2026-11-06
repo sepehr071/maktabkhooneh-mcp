@@ -118,7 +118,7 @@ async def test_curriculum_strips_duration_quote(client, api):
     api[f"{API}/courses/x-mk1318/chapters/"] = fixture("chapters.json")
     out = (await client.call_tool("mkh_curriculum", {"course_id": 1318})).structured_content
     ch = out["chapters"][0]
-    assert ch["lessons"] == len(ch["units"]) and ch["units"][0]["duration"] == "06:30"
+    assert "lessons" not in ch and ch["units"][0]["duration"] == "06:30"
     assert ch["units"][0]["type"] == "lecture" and "truncated" not in out
 
 
